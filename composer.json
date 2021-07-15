@@ -23,7 +23,8 @@
         }
     ],
     "require": {
-        "typo3/cms-core": "^6.2 || ^7.6 || ^8.7"
+        "typo3/cms-core": "^10.4",
+        "ext-simplexml": "*"
     },
     "autoload": {
         "psr-4": {
