@@ -1,0 +1,37 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:in2rss/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.sheet_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.feedUrl>
+						<TCEforms>
+							<label>LLL:EXT:in2rss/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.field_feedurl</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<eval>trim,domainname</eval>
+							</config>
+						</TCEforms>
+					</settings.feedUrl>
+					<settings.limit>
+						<TCEforms>
+							<label>LLL:EXT:in2rss/Resources/Private/Language/locallang_db.xlf:tt_content.pi_flexform.field_limit</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<eval>trim,int</eval>
+							</config>
+						</TCEforms>
+					</settings.limit>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

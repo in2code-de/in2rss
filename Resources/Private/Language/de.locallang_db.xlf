@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="" product-name="in2rss">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.pi_flexform.sheet_general">
+				<source>In2rss Plugin Configuration</source>
+				<target>In2rss Plugin Konfiguration</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field_feedurl">
+				<source>Feed URL</source>
+				<target>Feed URL</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field_limit">
+				<source>Limit</source>
+				<target>Anzahl an angezeigten Ergebnissen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

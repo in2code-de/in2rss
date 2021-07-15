@@ -1,0 +1,31 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+
+	<f:for each="{entries}" as="entry" iteration="iterator">
+		<div class="article{f:if(condition:iterator.isLast,then:' article__last')} articletype-newsteaser">
+			<f:if condition="{settings.showImages}">
+				<f:if condition="{entry.enclosure}">
+					<figure>
+						<img src="{entry.enclosure}" alt="{entry.title}" />
+					</figure>
+				</f:if>
+			</f:if>
+			<f:if condition="{entry.link}">
+				<f:then>
+					<h4>
+						<a href="{entry.link}" target="_blank">{entry.title}</a>
+					</h4>
+				</f:then>
+				<f:else>
+					<h4>{entry.title}</h4>
+				</f:else>
+			</f:if>
+			<div class="head">
+				<time datetime="{entry.pubDate->f:format.date(format:'c')}">{entry.pubDate->f:format.date(format:'%A, %d.%m.%Y %H:%M')}</time>
+			</div>
+			<p>{entry.description}</p>
+		</div>
+	</f:for>
+
+</f:section>

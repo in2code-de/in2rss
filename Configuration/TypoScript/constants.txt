@@ -1,0 +1,6 @@
+plugin.tx_in2rss {
+	settings {
+		showImages = 0
+		enableCache = 1
+	}
+}

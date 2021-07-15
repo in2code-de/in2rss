@@ -1,0 +1,38 @@
+{
+    "name": "in2code/in2rss",
+    "description": "Simply render an RSS feed on a website",
+    "keywords": [
+        "rss",
+        "TYPO3"
+    ],
+    "homepage": "https://github.com/in2code-de/in2glossar",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Sandra Pohl",
+            "email": "sandra.pohl@in2code.de",
+            "homepage": "https://www.in2code.de",
+            "role": "Product owner"
+        },
+        {
+            "name": "Alex Kellner",
+            "email": "alexander.kellner@in2code.de",
+            "homepage": "https://www.in2code.de",
+            "role": "Technical owner"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^6.2 || ^7.6 || ^8.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "In2code\\In2rss\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "in2rss"
+        }
+    }
+}
