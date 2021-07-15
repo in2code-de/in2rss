@@ -1,20 +1,25 @@
 <?php
-defined('TYPO3_MODE') or die('Access denied.');
+defined('TYPO3_MODE') || die('Access denied.');
 
-/**
- * Static Template
- */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    $_EXTKEY,
-    'Configuration/TypoScript',
-    'In2rss: Main Settings'
-);
 
-/**
- * Register Plugin
- */
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'In2code.' . $_EXTKEY,
-    'Main',
-    'In2rss: Display RSS Feed'
+call_user_func(
+    function () {
+        /**
+         * Static Template
+         */
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+            'in2rss',
+            'Configuration/TypoScript',
+            'In2rss: Main Settings'
+        );
+
+        /**
+         * Register Plugin
+         */
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'In2rss',
+            'Main',
+            'In2rss: Display RSS Feed'
+        );
+    }
 );
