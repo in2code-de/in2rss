@@ -10,4 +10,5 @@ Show a rss feed on your website
 
 | Version    | Date       | State      | Description                                                                                                                                                                                |
 | ---------- | ---------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1.0.0      | 2021-07-15 | Bugfix     | Released the old extension for TYPO3 6.2 - 8.7 to the public |
+| 2.0.0      | 2021-07-15 | Task       | Update for TYPO3 10 |
+| 1.0.0      | 2021-07-15 | Task       | Released the old extension for TYPO3 6.2 - 8.7 to the public |
