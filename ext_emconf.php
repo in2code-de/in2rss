@@ -1,9 +1,5 @@
 <?php
 
-########################################################################
-# Extension Manager/Repository config file for ext "in2rss".
-########################################################################
-
 $EM_CONF[$_EXTKEY] = [
     'title' => 'in2rss',
     'description' => 'This extension allows you to display rss feeds on your website',
@@ -15,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '6.2.0-8.7.99',
+            'typo3' => '10.4.0-10.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
