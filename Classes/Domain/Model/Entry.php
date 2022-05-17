@@ -47,7 +47,9 @@ class Entry extends AbstractEntity
         $this->setTitle($item->title->__toString());
         $this->setPubDate($item->pubDate->__toString());
         $this->setDescription($item->description->__toString());
-        $this->setEnclosure($item->enclosure->attributes()->url->__toString());
+        if (!empty($item->enclosure)) {
+            $this->setEnclosure($item->enclosure->attributes()->url->__toString());
+        }
     }
 
     /**
